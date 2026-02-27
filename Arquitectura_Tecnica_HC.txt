@@ -1,0 +1,60 @@
+DOCUMENTO DE ARQUITECTURA TÉCNICA - HC PLATAFORMA LEGALTECH
+=========================================================
+Fecha: 2026-02-24
+Estado: Fase de Desarrollo Inicial (MVP Frontend)
+Audiencia: Ingeniero de Sistemas / Arquitecto de Software
+
+1. STACK TECNOLÓGICO (FRONTEND CORE)
+------------------------------------
+- Framework: React 19.2.0 (Functional Components & Hooks).
+- Tooling/Build System: Vite 7.3.1 (HMR habilitado, carga ultra-rápida).
+- Lenguaje: TypeScript (~5.9.3) para tipado estático y robustez.
+- Estilizado: Tailwind CSS (Utility-first framework) + PostCSS.
+- Iconografía: Lucide-React (SVG Icons optimizados).
+- Animaciones: Framer Motion para transiciones suaves y micro-interacciones.
+
+2. ESTRUCTURA DE DIRECTORIOS (ESTÁNDAR VITE)
+--------------------------------------------
+/frontend
+├── /src
+│   ├── /components    # Componentes atómicos y de layout (Navbar, Footer, Cards)
+│   ├── /layouts       # Envoltorios de página (DashboardLayout)
+│   ├── /pages         # Componentes de página (Landing, Login, Dashboards)
+│   ├── /lib           # Utilidades y configuraciones de terceros
+│   ├── App.tsx        # Configuración de Router y Providers
+│   └── main.tsx       # Punto de entrada del DOM
+├── /public            # Assets estáticos (Images, Logos)
+└── tailwind.config.js # Configuración del Design System (Tokens de color de HC)
+
+3. ARQUITECTURA DE ENRUTAMIENTO (SPA)
+-------------------------------------
+Se utiliza 'react-router-dom' (v7) para la gestión del historial y navegación sin recarga:
+- [/]              -> LandingPage (Pública)
+- [/login]         -> Login (Simulado con RBAC inicial)
+- [/dashboard]     -> CorporateDashboard (Acceso Empresa)
+- [/admin]         -> AdminDashboard (Acceso Firma Legal)
+- [/contratos]     -> ContractGenerator (Motor de formularios dinámicos)
+- [/servicios/:id] -> ServiceDetail (Vistas dinámicas de servicios)
+
+4. SISTEMA DE DISEÑO (DESIGN TOKENS)
+------------------------------------
+Integrado mediante variables CSS y configuración de Tailwind:
+- Primary: #0B1325 (Navy Deep) - Seriedad y autoridad.
+- Accent: #00C3FF (Tech Blue) - Innovación y enfoque digital.
+- Text: #FFFFFF / Variantes de Gris para legibilidad.
+- Estética: Cyberpunk-Legal / Glassmorphism (Uso de blur, gradientes y sombras brutales).
+
+5. LÓGICA DE NEGOCIO Y ESTADO (ACTUAL)
+--------------------------------------
+- Autenticación: Simulada en 'Login.tsx' mediante estados locales y 'setTimeout' para emular latencia de red.
+- RBAC (Role Based Access Control): Lógica de redireccionamiento basada en credenciales (admin@hc.com / empresa@cliente.com).
+- Gestión de Formularios: Utiliza 'react-hook-form' para la captura de datos en el generador de contratos.
+- Layouts: Uso de 'DashboardLayout' para mantener consistencia en las áreas privadas.
+
+6. INTEGRACIONES FUTURAS (PLANIFICADAS)
+---------------------------------------
+- Backend: Firebase Auth / Firestore o n8n API.
+- Pagos: Wompi API (Webhook-based).
+- Generación PDF: Integración de backend para procesamiento de plantillas seguras.
+---------------------------------------------------------
+FIN DEL RESUMEN TÉCNICO

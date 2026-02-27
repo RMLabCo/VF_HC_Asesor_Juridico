@@ -1,0 +1,52 @@
+# Walkthrough: Activación de Página en Localhost
+
+Se ha activado con éxito el servidor de desarrollo para el frontend de la plataforma HC LegalTech.
+
+## Pasos Realizados
+
+1.  **Identificación del Directorio:** Se localizó el código fuente en `d:\RMLab_Antigravity_VF\VF_HC_Asesor_Juridico\frontend`.
+2.  **Ejecución de Comandos:** Se ejecutó `npm run dev` para iniciar el entorno de desarrollo con Vite.
+3.  **Confirmación del Servidor:** El servidor de Vite confirmó que está escuchando en local.
+
+## Resultados de Verificación
+
+- **Estado del Servidor:** Activo y listo.
+- **URL Local:** [http://localhost:5173](http://localhost:5173)
+
+> [!NOTE]
+> Debido a una limitación técnica en el entorno de herramientas del navegador (Playwright), no pude generar una captura de pantalla automática. Sin embargo, puedes acceder directamente a la URL arriba mencionada para ver el sitio en tu navegador.
+
+## Ejecución de Comandos
+El servidor de desarrollo se está ejecutando en segundo plano. Aquí está la salida de la terminal:
+
+
+Para ejecutar la página en tu máquina local y poder visualizarla, debes seguir estos pasos en tu terminal (PowerShell o CMD):
+
+1. Navegar a la carpeta del frontend
+Primero, asegúrate de estar en el directorio correcto donde reside el código de la aplicación:
+
+powershell
+cd d:\RMLab_Antigravity_VF\VF_HC_Asesor_Juridico\frontend
+2. Instalar dependencias (Solo si es la primera vez)
+Si es la primera vez que ejecutas el proyecto o si has descargado cambios recientemente, instala los paquetes necesarios:
+
+powershell
+npm install
+3. Iniciar el servidor de desarrollo
+Ejecuta el siguiente comando para activar el compilador en tiempo real (Vite):
+
+powershell
+npm run dev
+
+
+
+
+```bash
+> frontend@0.0.0 dev
+> vite
+
+  VITE v7.3.1  ready in 4334 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+```

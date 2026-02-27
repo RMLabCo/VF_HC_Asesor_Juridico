@@ -1,0 +1,152 @@
+A. ENCABEZADO (HEADER) - Navegación y Contacto Rápido
+Objetivo CX: Facilitar el contacto inmediato sin obligar a hacer scroll.
+Logotipo: [HC_Logo_FondoAzul_LetrasBlanca.png]
+Menú de Navegación: Inicio | Nosotros | Áreas de Práctica | Servicios | Contacto
+B. SECCIÓN HERO (La primera impresión)
+Diseño: Imagen de fondo de alto impacto [Edificios.jpg] con texto superpuesto.
+Titular H1 (Promesa de Valor): Tu Departamento Legal Digital
+Subtítulo (Soporte):
+Nuestro compromiso es transformar tus necesidades legales en soluciones concretas mediante un proceso de trabajo transparente y colaborativo.
+CTA Principal:
+Texto del botón 1: Crear Contrato Ahora
+Texto del botón 2: Agendar Consulta Express
+C. SECCIÓN: SOBRE LA FIRMA (Introducción)
+Diseño: Texto a la izquierda/derecha, imagen corporativa al lado contrario.
+Título: Sobre Nosotros
+Subtitulo 1: ¿Quiénes Somos?
+Cuerpo del texto: Somos una firma legal con sede en Tuluá, Valle del Cauca , respaldada por una trayectoria de más de 10 años brindando soluciones jurídicas a entidades financieras. Liderados por la abogada especialista Tielen Jholenmy Cortes Ruiz , nos distinguimos por combinar una gestión ética y rigurosa con resultados medibles.
+
+Subtitulo 2: Nuestra Visión
+Texto: Ser el aliado estratégico de referencia para las personas e instituciones financieras en el Valle del Cauca, reconocidos por nuestra capacidad única de cobertura regional en zonas complejas y por nuestra efectividad en la restitución de activos. Aspiramos a mantener los más altos estándares de calidad en la gestión de cobranza , asegurando que cada proceso jurídico se traduzca en valor retribuido para nuestros clientes.
+
+Subtitulo 3: Nuestra Misión
+Texto: Nuestra misión es transformar las necesidades legales de nuestros clientes en soluciones concretas y efectivas. Nos dedicamos a la recuperación de cartera y la gestión judicial mediante procesos optimizados que garantizan claridad, confianza y profesionalismo
+
+D. ÁREAS DE PRÁCTICA (Servicios)
+Título Principal centrado: 
+“Nuestras Áreas de Práctica”
+Diseño: Grilla de 3 columnas. Cada servicio debe tener un título y una breve descripción.
+Instrucciones generales:
+La expectativa es que cada sección sea un cuadro o estilo botón, con una imagen alusiva al contenido. Si el cliente unde clic en el botón debe abrir una nueva ventana con el detalle del servicio. Cada botón o cuadro debe finalizar con “Saber más …”
+Título de Sección 1: [Servicios Digitales]
+Servicio 1:
+Nombre: [Contratos en Minutos]
+Descripción corta: [Elabora tu Contrato de ]
+Descripción detallada para la ventana desplegable:
+
+Servicio 2:
+Nombre: [Consultas Virtuales Express]
+Descripción corta: Sesión de 30 minutos por video llamada donde revisamos tu duda específica con atención personalizada.Ideal para aclarar conceptos,evaluar viabilidad de acciones o recibir orientación inicial.
+Descripción detallada para la ventana desplegable: Ideal para aclarar conceptos,evaluar viabilidad de acciones o recibir orientación inicial.
+Beneficios clave:
+Respuesta inmediata y profesional
+Sin desplazamientos ni esperas
+Precio accesible y transparente
+Primera guía estratégica clara
+
+Servicio 3:
+Nombre: Cumplimiento Digital
+Descripción corta: Paquete básico para tu presencia en internet y redes sociales.
+Descripción detallada para la ventana desplegable: 
+Paquete de Cumplimiento Digital Básico
+Protege tu negocio online con documentación legal completa y adaptada a la normativa vigente. Es esencial para operar con transparencia y evitar sanciones por incumplimiento de protección de datos.
+Aviso de Privacidad
+Documento que informa cómo recopilas, usas y proteges los datos personales de tus usuarios.
+Términos y Condiciones
+Reglas claras de uso de tu plataforma que protegen tus derechos y establecen límites
+Política de Cookies
+Información transparente sobre el uso de cookies en tu sitio web, cumpliendo normativa europea RGPD y LOPDGDD
+
+Título de Sección 2 : [Servicios Jurídicos]
+Servicio 1:
+Nombre: [Gestión de Cobro de Cartera]
+Descripción corta: [Desde etapa prejurídica y hasta jurídico, retribuyendo valor a las entidades]
+Descripción detallada para la ventana desplegable: 
+Recuperación de Cartera Morosa.
+Recuperación efectiva de su cartera morosa con un enfoque dual: iniciamos con gestión persuasiva y formal (Pre Jurídica) y, de ser necesario, procedemos con la acción judicial ejecutiva (Jurídica) para asegurar el pago de sus obligaciones pendientes; realizamos investigación sobre activos susceptibles de embargo al deudor.
+Fase Prejurídica
+Recuperación sin litigio mediante requerimientos formales, llamadas de negociación y acuerdos de pago, priorizando la solución rápida y preservando la relación comercial con su cliente.
+Fase Jurídica
+Activación de la vía judicial para forzar la recuperación. Presentación de demanda ejecutiva ante tribunales, buscando embargo y remate de bienes del deudor para garantizar el cobro total de la deuda.
+
+Servicio 2:
+Nombre: [Gestión Judicial]
+Descripción corta: [Ejecutivos, Efectividad Garantía Real (Prenda o Hipoteca), Leasing, Renting, Factoring]
+Descripción detallada para la ventana desplegable: 
+Gestión Judicial Efectiva.
+Procesos Ejecutivos, Efectividad Garantia Real (Prenda/Hipoteca), Leasing, Renting, Factoring. 
+Investigación de Bienes. 
+Realizamos investigación primara de los activos susceptibles de embargo para establecer estrategia.
+Avance Procesal Ágil.
+Nuestro objetivo, mayor efectividad en el menor tiempo y con el menor desgaste.
+Zonas de Atención.
+Llegamos donde otros no llegan, en el Valle del Cauca: Tuluá, Andalucía, Bugalagrande, Trujillo, Riofrío, Bolívar, Roldanillo, Zarzal, La Unión, El Dovio, Versalles, La Victoria, Alcalá, Sevilla, Caicedonia, Cartago, Toro, San Pedro, Buga, Calima El Darién, Restrepo, Yotoco, Cerrito, Ginebra, Guacarí, Palmira.
+
+
+
+Servicio 3:
+Nombre: [Servicios Diligencias]
+Descripción corta: [Diligencias de embargo y secuestro, entrega de bienes o recuperación de activos]
+Descripción detallada para la ventana desplegable: 
+Servicio en Diligencias.
+Acompañamos a los acreedores durante todo el proceso ejecutivo, de restitución o según la modalidad de colocación, y acompañamos diligencias solicitadas por las entidades en distintos procesos.
+Diligencias de Secuestro
+Realizando, radicación despachos comisorios, ubicación de bienes y desarrollo de la diligencia
+Diligencias de Entrega
+En procesos de restitución o remate de bienes, radicamos las comisiones y gestionamos la diligencia hasta la entrega del bien.
+Radicación Embargos o Documentos
+Gestión documental ante entidades locales para evitar desplazamientos
+
+Servicio 4:
+Nombre: Procesos de Insolvencia
+Descripción corta: Defendemos los intereses de los acreedores en los procesos de Insolvencia iniciados por el deudor
+Descripción detallada para la ventana desplegable: 
+Procesos de Insolvencia.
+Representación de entidades financieras en los procesos de Insolvencia PNNC, Reorganización Empresarial o Liquidación Judicial.
+
+
+
+Representación entidad
+Asumimos el mandato encomendado y verificamos que el deudor cumpla con los requisitos para acceder a la Ley
+Presentación créditos
+Poniendo de presente las obligaciones en mora, a fin de que sean incluidas dentro de las oportunidades procesales
+Vigilancia procesal
+Formalización de actos procesales, verificando que los tiempos se cumplan y se califique debidamente la entidad
+Confirmación acuerdos o adjudicaciones
+Acompañamos hasta la confirmación de acuerdos que beneficien a la entidad.
+Servicio 5:
+Nombre: [Estudio de Títulos]
+Descripción corta: [Estudio documental para otorgar certeza jurídica sobre el activo]
+Descripción detallada para la ventana desplegable:
+Estudio de Títulos. 
+Verificación de la existencia jurídica y real de los bienes pretendidos a otorgar en garantía a la entidad o para el pago de obligaciones, a fin de cuidar los intereses de la banca.
+• Verificación documental completa
+• Comprobación existencia real del activo y su estado
+
+
+F. PRUEBA SOCIAL (Nuestros Clientes)
+Diseño: Carrusel de imágenes de logos de los clientes.
+Cliente 1: [logo-edificar.png]
+Ciente 2: [emic.png]
+Cliente 3:[rmlab-logo.png]
+G. FOOTER (Pie de página)
+Objetivo CX: Última oportunidad de contacto y confianza legal.
+Columna 1:[HC_Logo_FondoAzul_LetrasBlanca.png].
+Columna 2 (Contacto):
+Dirección Física: [Tuluá, Valle del Cauca]
+Teléfono: [+57 315 668 4149]
+Email: [elencortes@hcabogadoscol.com]
+
+Columna 3 (Enlaces): LinkedIn, Instagram, Aviso Legal, Política de Privacidad.
+
+
+
+
+
+Modelos de contratos;
+
+Contrato de Arrendamiento de Vivienda Urbana en Propiedad Horizontal.
+Contrato de Arrendamiento de Vivienda Urbana NO Propiedad Horizontal.
+Contrato de Promesa de Compraventa
+Derecho de Petición
+Pagaré

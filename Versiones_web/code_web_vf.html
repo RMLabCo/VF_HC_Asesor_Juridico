@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>HC Abogados - Tu Departamento Legal Digital</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00C3FF",
+                        "primary-dark": "#009ACD",
+                        "navy": "#0A192F",
+                        "deep-navy": "#0B1325",
+                        "neutral-dark": "#111827",
+                        "background-light": "#FFFFFF",
+                        "background-dim": "#F4F6F8",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Space Grotesk", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                    },
+                    boxShadow: {
+                        "brutal": "4px 4px 0px 0px #111827",
+                        "brutal-sm": "2px 2px 0px 0px #111827",
+                        "brutal-light": "4px 4px 0px 0px rgba(0, 195, 255, 0.2)",
+                        "brutal-white": "4px 4px 0px 0px rgba(255, 255, 255, 1)",
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'fade-in-up-delay-1': 'fadeInUp 0.8s ease-out 0.2s forwards',
+                        'fade-in-up-delay-2': 'fadeInUp 0.8s ease-out 0.4s forwards',
+                        'fade-in-up-delay-3': 'fadeInUp 0.8s ease-out 0.6s forwards',
+                    }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .text-outline-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+            color: transparent;
+        }
+        .stroke-text-blue {
+             -webkit-text-stroke: 1px #00C3FF; 
+             color: transparent;
+        }
+        .text-fill-transparent {
+            -webkit-text-fill-color: transparent;
+        }
+        .reveal-on-scroll {
+            @apply opacity-0 animate-fade-in-up;
+            animation-play-state: running;
+        }
+        .practice-card {
+            @apply transition-all duration-300 ease-out hover:scale-105 cursor-pointer p-4 -m-4 rounded-lg hover:bg-white hover:shadow-lg hover:shadow-primary/10;
+        }
+        .practice-card:hover .decorative-line {
+            @apply w-16 bg-primary shadow-[0_0_10px_#00C3FF];
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light text-navy antialiased overflow-x-hidden">
+    <header class="fixed top-0 w-full z-50 bg-navy border-b border-gray-800 animate-fade-in-up">
+        <div class="max-w-[1440px] mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3 group cursor-pointer">
+                <div
+                    class="size-8 bg-white/10 flex items-center justify-center rounded transition-transform group-hover:scale-110">
+                    <span class="material-symbols-outlined text-white text-xl">balance</span>
+                </div>
+                <h2 class="text-white text-lg font-black tracking-widest uppercase">HC ABOGADOS</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-white text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors"
+                    href="#">Inicio</a>
+                <a class="text-white text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors"
+                    href="#">Firma</a>
+                <a class="text-white text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors"
+                    href="#">Servicios</a>
+                <a class="text-white text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors"
+                    href="#">Contacto</a>
+            </nav>
+            <button
+                class="hidden sm:flex items-center gap-2 bg-transparent text-white border border-white/20 px-6 py-2 rounded-none text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-navy transition-all duration-300">
+                <span>Área Cliente</span>
+            </button>
+            <button class="md:hidden text-white">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </header>
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 overflow-hidden min-h-[90vh] flex items-center">
+        <div class="absolute inset-0 z-0 animate-fade-in-up">
+            <img alt="Modern glass skyscrapers at dusk" class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmFbFEoo_-FWmU69ucLuZgPbvlYI_vCcxczxgTVHdstAUP3WMHKsu8xgEZdxoCL8KOGe3a1HICMP3dBtWhyBql1LRYu6kkY-UuLZVWQSa_TU8ZwrIb7OQMSj82DFSkWYuHz16wwwTqJ8k3LW3y90ZRzaQWa_TxKsnPwfH-yErdA4KXE6NdFbGCnPk4Mk7AeM8sYjXNUNuxP2T6n8SmCry3VwBuSNAStqkoBEdpl3k8XB5sp6dMiWM1bj8AD0nSL1cJu1vn4skmOEI" />
+            <div class="absolute inset-0 bg-navy/60 backdrop-blur-[2px]"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/50 to-transparent"></div>
+        </div>
+        <div class="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center w-full relative z-10">
+            <div class="flex flex-col gap-8 relative z-10">
+                <div
+                    class="inline-flex items-center justify-center px-4 py-1.5 bg-primary w-fit shadow-brutal-white opacity-0 animate-fade-in-up-delay-1">
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-white">Excelencia Jurídica</span>
+                </div>
+                <h1
+                    class="text-5xl lg:text-7xl font-black leading-[0.85] tracking-tighter text-white uppercase drop-shadow-lg opacity-0 animate-fade-in-up-delay-2">
+                    TU DEPARTAMENTO <br />
+                    <span class="text-primary">LEGAL</span> <br />
+                    DIGITAL
+                </h1>
+                <div class="border-l-4 border-white pl-6 py-2 opacity-0 animate-fade-in-up-delay-3">
+                    <p class="text-lg text-gray-200 max-w-md font-normal leading-relaxed drop-shadow-md">
+                        Nuestro compromiso es transformar tus necesidades legales en soluciones concretas, combinando
+                        experiencia jurídica con tecnología de vanguardia.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-4 pt-4 opacity-0 animate-fade-in-up-delay-3">
+                    <button
+                        class="bg-white hover:bg-primary hover:text-white text-navy px-8 py-4 rounded-none font-bold text-sm tracking-widest uppercase shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                        CREAR DOCUMENTO
+                    </button>
+                    <button
+                        class="border border-white text-white hover:bg-white hover:text-navy px-8 py-4 rounded-none font-bold text-sm tracking-widest uppercase transition-colors shadow-none hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
+                        CONSULTORÍA
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-light border-t border-gray-100 animate-fade-in-up-delay-1">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="text-left mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-navy uppercase tracking-tight">Elabora tu <span
+                        class="text-primary border-b-4 border-primary pb-0">Contrato</span></h2>
+                <div class="mt-6 flex gap-6 text-[10px] font-bold tracking-widest uppercase text-primary">
+                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">bolt</span>
+                        Rápido</span>
+                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">shield</span>
+                        Seguro</span>
+                    <span class="flex items-center gap-1"><span
+                            class="material-symbols-outlined text-sm">verified</span> Validez Legal</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div class="group bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-primary transition-all duration-300 flex flex-col h-full shadow-neutral-dark/5 hover:shadow-neutral-dark/20 overflow-hidden relative pb-14 opacity-0 animate-fade-in-up-delay-2"
+                    style="animation-delay: 0.1s">
+                    <div class="p-6 pb-0 flex-grow">
+                        <div class="mb-4 text-navy">
+                            <span class="material-symbols-outlined text-6xl">apartment</span>
+                        </div>
+                        <h3 class="text-sm font-black text-navy uppercase mb-2 leading-tight min-h-[40px]">Arrendamiento
+                            PH</h3>
+                        <p class="text-gray-400 text-xs mb-6 leading-relaxed">Propiedad horizontal y residencial.</p>
+                    </div>
+                    <a class="absolute bottom-0 left-0 w-full bg-[#0B1325] border-t-2 border-[#00C3FF] h-12 flex items-center justify-center text-white gap-2 transition-all duration-300 group-hover:bg-[#00C3FF] group-hover:text-[#0B1325]"
+                        href="#">
+                        <span class="text-xs font-bold tracking-widest uppercase">INICIAR</span>
+                        <span
+                            class="material-symbols-outlined text-sm text-[#00C3FF] group-hover:text-[#0B1325] transition-colors">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="group bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-primary transition-all duration-300 flex flex-col h-full shadow-neutral-dark/5 hover:shadow-neutral-dark/20 overflow-hidden relative pb-14 opacity-0 animate-fade-in-up-delay-2"
+                    style="animation-delay: 0.2s">
+                    <div class="p-6 pb-0 flex-grow">
+                        <div class="mb-4 text-navy">
+                            <span class="material-symbols-outlined text-6xl">home_work</span>
+                        </div>
+                        <h3 class="text-sm font-black text-navy uppercase mb-2 leading-tight min-h-[40px]">Arrendamiento
+                            NO PH</h3>
+                        <p class="text-gray-400 text-xs mb-6 leading-relaxed">Locales y viviendas independientes.</p>
+                    </div>
+                    <a class="absolute bottom-0 left-0 w-full bg-[#0B1325] border-t-2 border-[#00C3FF] h-12 flex items-center justify-center text-white gap-2 transition-all duration-300 group-hover:bg-[#00C3FF] group-hover:text-[#0B1325]"
+                        href="#">
+                        <span class="text-xs font-bold tracking-widest uppercase">INICIAR</span>
+                        <span
+                            class="material-symbols-outlined text-sm text-[#00C3FF] group-hover:text-[#0B1325] transition-colors">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="group bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-primary transition-all duration-300 flex flex-col h-full shadow-neutral-dark/5 hover:shadow-neutral-dark/20 overflow-hidden relative pb-14 opacity-0 animate-fade-in-up-delay-2"
+                    style="animation-delay: 0.3s">
+                    <div class="p-6 pb-0 flex-grow">
+                        <div class="mb-4 text-navy">
+                            <span class="material-symbols-outlined text-6xl">handshake</span>
+                        </div>
+                        <h3 class="text-sm font-black text-navy uppercase mb-2 leading-tight min-h-[40px]">Promesa
+                            Compraventa</h3>
+                        <p class="text-gray-400 text-xs mb-6 leading-relaxed">Asegura la transacción inmobiliaria.</p>
+                    </div>
+                    <a class="absolute bottom-0 left-0 w-full bg-[#0B1325] border-t-2 border-[#00C3FF] h-12 flex items-center justify-center text-white gap-2 transition-all duration-300 group-hover:bg-[#00C3FF] group-hover:text-[#0B1325]"
+                        href="#">
+                        <span class="text-xs font-bold tracking-widest uppercase">INICIAR</span>
+                        <span
+                            class="material-symbols-outlined text-sm text-[#00C3FF] group-hover:text-[#0B1325] transition-colors">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="group bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-primary transition-all duration-300 flex flex-col h-full shadow-neutral-dark/5 hover:shadow-neutral-dark/20 overflow-hidden relative pb-14 opacity-0 animate-fade-in-up-delay-2"
+                    style="animation-delay: 0.4s">
+                    <div class="p-6 pb-0 flex-grow">
+                        <div class="mb-4 text-navy">
+                            <span class="material-symbols-outlined text-6xl">gavel</span>
+                        </div>
+                        <h3 class="text-sm font-black text-navy uppercase mb-2 leading-tight min-h-[40px]">Derecho
+                            Petición</h3>
+                        <p class="text-gray-400 text-xs mb-6 leading-relaxed">Reclamos formales ante entidades.</p>
+                    </div>
+                    <a class="absolute bottom-0 left-0 w-full bg-[#0B1325] border-t-2 border-[#00C3FF] h-12 flex items-center justify-center text-white gap-2 transition-all duration-300 group-hover:bg-[#00C3FF] group-hover:text-[#0B1325]"
+                        href="#">
+                        <span class="text-xs font-bold tracking-widest uppercase">INICIAR</span>
+                        <span
+                            class="material-symbols-outlined text-sm text-[#00C3FF] group-hover:text-[#0B1325] transition-colors">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="group bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-primary transition-all duration-300 flex flex-col h-full shadow-neutral-dark/5 hover:shadow-neutral-dark/20 overflow-hidden relative pb-14 opacity-0 animate-fade-in-up-delay-2"
+                    style="animation-delay: 0.5s">
+                    <div class="p-6 pb-0 flex-grow">
+                        <div class="mb-4 text-navy">
+                            <span class="material-symbols-outlined text-6xl">receipt_long</span>
+                        </div>
+                        <h3 class="text-sm font-black text-navy uppercase mb-2 leading-tight min-h-[40px]">Pagaré</h3>
+                        <p class="text-gray-400 text-xs mb-6 leading-relaxed">Respaldo de obligaciones dinerarias.</p>
+                    </div>
+                    <a class="absolute bottom-0 left-0 w-full bg-[#0B1325] border-t-2 border-[#00C3FF] h-12 flex items-center justify-center text-white gap-2 transition-all duration-300 group-hover:bg-[#00C3FF] group-hover:text-[#0B1325]"
+                        href="#">
+                        <span class="text-xs font-bold tracking-widest uppercase">INICIAR</span>
+                        <span
+                            class="material-symbols-outlined text-sm text-[#00C3FF] group-hover:text-[#0B1325] transition-colors">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-dim relative overflow-hidden animate-fade-in-up-delay-2">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2 relative">
+                    <div class="p-2 bg-white border border-gray-200 shadow-xl shadow-neutral-dark/20 rotate-[-2deg]">
+                        <div class="aspect-[4/3] overflow-hidden bg-gray-200 relative grayscale contrast-110">
+                            <img alt="Corporate meeting"
+                                class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkFbfQ4fTKA19Ypqrga7VGNnnWzWk_pVM_YAabuiKuc6VkMsWBrczD4GEDF2bz85WCJxkAehRFMuGgM6zHLfeQ__O18tj7BmbW7llvhKUBe01Zn9dZp9JWYIgQtCmj4sYI9Z_yNYPV-81SzyF_F9sNvdsxwc_hX1ss3YbFFf80e2CfE2EBp6r8WimlR4KrMR2GpImwYX7mnGRuNXQpIHq7LvXAP3rJPJ9_NsAXWol16kQNUDQHsgD-zeak1LCWzG7VDvKvnZfXwCY" />
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex flex-col justify-center gap-10">
+                    <div>
+                        <h2 class="text-4xl lg:text-5xl font-black text-navy uppercase leading-none mb-2">Estructura
+                            <br /> de <span class="text-primary">Confianza</span></h2>
+                    </div>
+                    <div class="space-y-10">
+                        <div class="flex gap-6 group items-start">
+                            <div
+                                class="text-5xl font-black text-primary/20 group-hover:text-primary/40 transition-colors">
+                                01</div>
+                            <div>
+                                <h3 class="text-sm font-black text-navy uppercase mb-2 tracking-wider">Nuestra Visión
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed max-w-sm">Dominar el paisaje legal
+                                    digital en Latinoamérica, eliminando la burocracia obsoleta mediante tecnología pura
+                                    y asesoría experta.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group items-start">
+                            <div
+                                class="text-5xl font-black text-primary/20 group-hover:text-primary/40 transition-colors">
+                                02</div>
+                            <div>
+                                <h3 class="text-sm font-black text-navy uppercase mb-2 tracking-wider">Nuestra Misión
+                                </h3>
+                                <p class="text-gray-500 text-sm leading-relaxed max-w-sm">Brindar una armadura jurídica
+                                    inquebrantable a las empresas que operan en la frontera de la innovación y el
+                                    comercio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-light animate-fade-in-up-delay-2">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div
+                    class="lg:col-span-1 bg-navy p-10 flex flex-col justify-center relative overflow-hidden min-h-[400px]">
+                    <div class="absolute inset-0 opacity-10"
+                        style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;">
+                    </div>
+                    <div class="relative z-10">
+                        <h2 class="text-5xl font-black text-white leading-none uppercase tracking-tighter">
+                            ÁREAS <br />DE<br /><span class="text-primary">PRÁCTICA</span>
+                        </h2>
+                        <div class="mt-8 border-t border-white/10 pt-8">
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Nuestra firma se especializa en la intersección entre la ley corporativa tradicional y
+                                las nuevas dinámicas de la economía digital.
+                            </p>
+                            <a class="inline-flex items-center gap-2 text-primary font-bold text-xs uppercase mt-6 tracking-widest hover:text-white transition-colors"
+                                href="#">
+                                Ver todo el portafolio <span
+                                    class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 grid md:grid-cols-2 gap-y-12 gap-x-8 py-8">
+                    <div class="practice-card group">
+                        <div class="w-8 h-1 bg-primary mb-6 decorative-line transition-all duration-300"></div>
+                        <h3
+                            class="text-xl font-black text-navy uppercase mb-3 tracking-wide group-hover:text-primary transition-colors">
+                            Contratos <br />Smart</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed group-hover:text-gray-700">Arquitectura
+                            documental adaptada al ecosistema digital actual. Redacción, revisión y automatización.</p>
+                    </div>
+                    <div class="practice-card group">
+                        <div class="w-8 h-1 bg-primary mb-6 decorative-line transition-all duration-300"></div>
+                        <h3
+                            class="text-xl font-black text-navy uppercase mb-3 tracking-wide group-hover:text-primary transition-colors">
+                            Compliance <br />Web</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed group-hover:text-gray-700">Protección blindada
+                            de datos, términos y condiciones, y propiedad intelectual en entornos digitales.</p>
+                    </div>
+                    <div class="practice-card group">
+                        <div class="w-8 h-1 bg-primary mb-6 decorative-line transition-all duration-300"></div>
+                        <h3
+                            class="text-xl font-black text-navy uppercase mb-3 tracking-wide group-hover:text-primary transition-colors">
+                            Recuperación <br />Agresiva</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed group-hover:text-gray-700">Estrategias de cobro
+                            pre-jurídico y jurídico efectivas basadas en análisis de datos y perfiles de riesgo.</p>
+                    </div>
+                    <div class="practice-card group">
+                        <div class="w-8 h-1 bg-primary mb-6 decorative-line transition-all duration-300"></div>
+                        <h3
+                            class="text-xl font-black text-navy uppercase mb-3 tracking-wide group-hover:text-primary transition-colors">
+                            Litigio <br />Estratégico</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed group-hover:text-gray-700">Representación
+                            táctica ante tribunales para casos complejos comerciales, civiles y administrativos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="border-t border-gray-100 bg-white py-16 animate-fade-in-up-delay-2">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <p class="text-center text-[10px] font-bold text-gray-300 mb-10 uppercase tracking-[0.3em]">Confían en
+                nosotros</p>
+            <div
+                class="flex flex-wrap justify-between items-center gap-8 md:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+                <h4
+                    class="text-2xl font-black text-navy uppercase tracking-widest hover:scale-110 transition-transform">
+                    EDIFICAR</h4>
+                <h4
+                    class="text-2xl font-black text-navy uppercase tracking-widest hover:scale-110 transition-transform">
+                    EMIC</h4>
+                <h4
+                    class="text-2xl font-black text-navy uppercase tracking-widest hover:scale-110 transition-transform">
+                    RMLAB</h4>
+                <h4
+                    class="text-2xl font-black text-navy uppercase tracking-widest hover:scale-110 transition-transform">
+                    LEGALTECH</h4>
+            </div>
+        </div>
+    </section>
+    <section
+        class="py-32 bg-navy relative overflow-hidden flex items-center justify-center min-h-[500px] animate-fade-in-up-delay-3">
+        <div class="max-w-[1000px] mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-black text-white mb-4 tracking-tight uppercase">
+                ¿NECESITAS <span class="text-primary">RESULTADOS?</span>
+            </h2>
+            <p class="text-gray-400 text-sm mb-12 max-w-xl mx-auto font-medium">
+                Agenda una consulta inicial sin compromiso y descubre cómo podemos blindar tu operación.
+            </p>
+            <button
+                class="bg-primary hover:bg-primary-dark text-white px-10 py-4 rounded-none text-sm font-bold uppercase tracking-widest transition-all shadow-brutal hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">
+                AGENDAR CONSULTA AHORA
+            </button>
+        </div>
+    </section>
+    <footer class="bg-navy border-t border-gray-800 pt-20 pb-10">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-16 mb-20">
+                <div class="space-y-6">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-white text-2xl font-black uppercase tracking-tight leading-none">HC
+                            <br />ABOGADOS</h2>
+                        <p class="text-gray-400 text-xs leading-relaxed max-w-xs">
+                            Redefiniendo la práctica legal a través del diseño estructural y la ejecución digital.
+                            Soluciones premium para clientes exigentes.
+                        </p>
+                    </div>
+                    <div class="flex gap-3 pt-4">
+                        <a class="size-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-[14px]">photo_camera</span>
+                        </a>
+                        <a class="size-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-[14px]">public</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <h3 class="text-primary font-bold text-xs uppercase tracking-widest mb-6">Contacto</h3>
+                    <div class="space-y-1">
+                        <span class="text-[10px] text-gray-500 uppercase tracking-wider font-bold">Exposición</span>
+                        <p class="text-white text-sm font-bold">Tuluá, Valle del Cauca</p>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-[10px] text-gray-500 uppercase tracking-wider font-bold">Directo</span>
+                        <p class="text-white text-sm font-bold">+57 (602) 123-4567</p>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-[10px] text-gray-500 uppercase tracking-wider font-bold">Email</span>
+                        <a class="text-white text-sm font-bold hover:text-primary transition-colors"
+                            href="mailto:contacto@hcabogados.com">contacto@hcabogados.com</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-primary font-bold text-xs uppercase tracking-widest mb-6">Newsletter</h3>
+                    <p class="text-gray-400 text-xs mb-6">Suscríbete para recibir actualizaciones legales y novedades de
+                        la firma.</p>
+                    <form class="flex flex-col gap-3">
+                        <input
+                            class="bg-transparent border border-gray-700 rounded-none px-4 py-3 text-white text-xs focus:ring-1 focus:ring-primary focus:border-primary placeholder-gray-600 transition-colors"
+                            placeholder="Correo Electrónico" type="email" />
+                        <button
+                            class="bg-white text-navy font-bold py-3 rounded-none hover:bg-gray-200 transition-colors text-[10px] uppercase tracking-widest w-full"
+                            type="button">
+                            Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-600 text-[10px] tracking-wider uppercase">© 2024 HC Abogados | Todos los derechos
+                    reservados.</p>
+                <div class="flex gap-8">
+                    <a class="text-gray-600 text-[10px] tracking-wider uppercase hover:text-white transition-colors"
+                        href="#">Privacidad</a>
+                    <a class="text-gray-600 text-[10px] tracking-wider uppercase hover:text-white transition-colors"
+                        href="#">Términos</a>
+                    <a class="text-gray-600 text-[10px] tracking-wider uppercase hover:text-white transition-colors"
+                        href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
